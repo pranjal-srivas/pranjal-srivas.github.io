@@ -4,6 +4,7 @@
    ============================================ */
 
 :root {
+  /* Dark theme (default) */
   --bg: #0a0a0c;
   --bg-elev: #131418;
   --bg-elev-2: #1a1b21;
@@ -16,6 +17,7 @@
   --accent-2: #7dd3fc;
   --rule: #25262d;
   --rule-strong: #34353d;
+  --glow: rgba(255, 203, 5, 0.06);
 
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
@@ -23,6 +25,21 @@
   --radius: 6px;
   --radius-lg: 10px;
   --max-w: 760px;
+}
+
+[data-theme="light"] {
+  --bg: #fbfaf7;
+  --bg-elev: #ffffff;
+  --bg-elev-2: #f5f3ee;
+  --bg-header: rgba(251, 250, 247, 0.85);
+  --fg: #15141a;
+  --fg-dim: #4a4853;
+  --fg-muted: #7a7682;
+  --accent: #00274c;       /* Michigan blue — high contrast on cream */
+  --accent-soft: #00274c12;
+  --rule: #e6e3dc;
+  --rule-strong: #d3cfc4;
+  --glow: rgba(0, 39, 76, 0.05);
 }
 
 * { box-sizing: border-box; }
@@ -35,7 +52,7 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 203, 5, 0.06), transparent 70%),
+    radial-gradient(ellipse 80% 50% at 50% -10%, var(--glow), transparent 70%),
     var(--bg);
   background-attachment: fixed;
   color: var(--fg);
@@ -92,6 +109,7 @@ a:hover { color: var(--accent); }
 
 .site-nav {
   display: flex;
+  align-items: center;
   gap: 1.25rem;
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -108,6 +126,33 @@ a:hover { color: var(--accent); }
   color: var(--accent);
   border-bottom-color: var(--accent);
 }
+
+/* ---- Theme toggle ---- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin-left: 0.25rem;
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  color: var(--fg-dim);
+  cursor: pointer;
+  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease;
+}
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.theme-toggle .icon { display: block; width: 16px; height: 16px; }
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* ============================================
    MAIN
@@ -282,6 +327,28 @@ p.lead { font-size: 1.05rem; color: var(--fg); margin-bottom: 1.5rem; }
   color: var(--accent);
   border-color: var(--accent);
   background: var(--accent-soft);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.75rem !important;
+}
+.project-links a {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fg-muted);
+  padding: 0.18rem 0.5rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--bg);
+}
+.project-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 .tags {
