@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CV &mdash; Pranjal Srivastava</title>
+<meta name="description" content="CV, education, and research experience of Pranjal Srivastava." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-title">Pranjal Srivastava</a>
+    <nav class="site-nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html" class="active">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <p class="kicker">04 &middot; CV</p>
+    <h1>Curriculum vitae</h1>
+  </div>
+
+  <div class="cv-download">
+    <p><strong>Full CV</strong> &middot; latest version, PDF</p>
+    <a href="assets/pranjal_srivastava_cv.pdf" class="ext cv">Download CV &rarr;</a>
+  </div>
+
+  <h2>Education</h2>
+  <dl class="education">
+    <dt>Ph.D., Bioinformatics (PIBS) &middot; Dual MA, Linguistics</dt>
+    <dd>University of Michigan, Ann Arbor &middot; Aug 2023 &ndash; present</dd>
+
+    <dt>B.A., Molecular &amp; Cell Biology (Genetics), Statistics, and Linguistics</dt>
+    <dd>University of California, Berkeley &middot; Aug 2019 &ndash; Dec 2022</dd>
+  </dl>
+
+  <h2>Research experience</h2>
+  <dl class="experience">
+    <dt>Athey &amp; Dinov Labs, University of Michigan</dt>
+    <dd>
+      Bioinformatics Researcher &middot; 2023 &ndash; present.
+      Current focus: ONT long-read sequencing &mdash; information-theoretic
+      quality validation and differential privacy for longitudinal signals.
+      Previously led analysis of the Prechter Bipolar and Substance Use
+      Disorder cohorts (2023 &ndash; 2025), producing the LAMP mixed-model
+      phenotyper.
+    </dd>
+
+    <dt>Levin Lab (with Gizem Gumuskaya), Tufts University</dt>
+    <dd>
+      Autonomous Biobots Researcher &middot; 2020 &ndash; 2025.
+      Methods development and analysis for self-constructing motile biobots;
+      co-authored two <em>Advanced Science</em> papers.
+    </dd>
+
+    <dt>Garcia Lab, UC Berkeley</dt>
+    <dd>
+      Developmental Biology Research Assistant &middot; 2021 &ndash; 2023.
+      Investigated Zelda binding sites in the <em>bicoid</em> gene via
+      <em>Drosophila</em> germline clones and GFP/mCherry fluorescence
+      imaging.
+    </dd>
+
+    <dt>IBM Research (with Dr. Ching-Hua Chen)</dt>
+    <dd>
+      Summer Research Intern &middot; 2018. Random forest models for recall
+      bias in college student sleep self-reporting.
+    </dd>
+  </dl>
+
+  <h2>Honors</h2>
+  <dl>
+    <dt>National Merit Scholar</dt>
+    <dd>2019</dd>
+  </dl>
+
+  <h2>Languages</h2>
+  <p>English (native), Hindi, Spanish (advanced), German (beginner), Old English (beginner).</p>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>&copy; <span id="year">2026</span> Pranjal Srivastava</span>
+    <span><a href="mailto:pranjalz@umich.edu">pranjalz@umich.edu</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

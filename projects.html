@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects &mdash; Pranjal Srivastava</title>
+<meta name="description" content="Projects and works by Pranjal Srivastava — long-read sequencing, M-local entropy, differential privacy, biobots, bioelectricity." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-title">Pranjal Srivastava</a>
+    <nav class="site-nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <p class="kicker">02 &middot; Projects</p>
+    <h1>Projects &amp; works</h1>
+  </div>
+
+  <h2>Active</h2>
+  <div class="projects">
+
+    <article class="project">
+      <header>
+        <h3>Information-theoretic validation of ONT long-read data</h3>
+        <span class="status active">Active</span>
+      </header>
+      <p>
+        Quantifying how much usable information a raw nanopore squiggle
+        actually carries, and using that signal to flag low-quality reads
+        before they propagate downstream. Aim: a principled QC step grounded
+        in information theory rather than heuristic thresholds.
+      </p>
+      <p class="tags"><span>ONT</span><span>info theory</span><span>QC</span></p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Spacekime nanopore basecalling</h3>
+        <span class="status active">Active</span>
+      </header>
+      <p>
+        Applying the Dinov&ndash;Velev spacekime framework to ONT pod5
+        basecalling. Re-parameterizing squiggle-to-sequence inference with
+        kime-phase priors with the goal of improving accuracy in low-coverage
+        regions.
+      </p>
+      <p class="tags"><span>ONT</span><span>signal processing</span><span>basecalling</span></p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Differential privacy for longitudinal biomedical signals</h3>
+        <span class="status active">Active</span>
+      </header>
+      <p>
+        Designing differentially private mechanisms tailored to longitudinal
+        signals (mood trajectories, physiological time series) that protect
+        individual contributions without destroying clinically meaningful
+        structure.
+      </p>
+      <p class="tags"><span>privacy</span><span>longitudinal</span><span>statistics</span></p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>M-local entropy in language</h3>
+        <span class="status active">Active</span>
+      </header>
+      <p>
+        Recreation and extension of Someya et al. (2025) on M-local entropy.
+        Probing the locality structure of information in natural language and
+        testing predictions across typologically distant corpora.
+      </p>
+      <p class="tags"><span>info theory</span><span>linguistics</span><span>NLP</span></p>
+    </article>
+
+  </div>
+
+  <h2>Past</h2>
+  <div class="projects">
+
+    <article class="project">
+      <header>
+        <h3>LAMP &mdash; Linear Analysis Mixed-Model Phenotyper</h3>
+        <span class="status">2023 &ndash; 2025</span>
+      </header>
+      <p>
+        Co-developed a mixed-model phenotyper for bipolar disorder using the
+        Prechter cohort, quantifying how medication, substance use, and
+        comorbidities shape mood trajectories. Preprint on medRxiv (2025).
+      </p>
+      <p class="tags"><span>R</span><span>mixed models</span><span>psychiatric genomics</span></p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Anthrobots &mdash; autonomous biobots from human cells</h3>
+        <span class="status">2020 &ndash; 2025</span>
+      </header>
+      <p>
+        With Gizem Gumuskaya in the Levin Lab at Tufts. Methods development
+        and analysis for self-constructing motile biobots assembled from
+        adult human somatic progenitor cells. Two papers in
+        <em>Advanced Science</em>.
+      </p>
+      <p class="tags"><span>synthetic morphogenesis</span><span>image analysis</span></p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Bioelectricity meta-analysis</h3>
+        <span class="status">2019 &ndash; 2021</span>
+      </header>
+      <p>
+        First-author meta-analysis aggregating bioelectric measurements
+        across cancer, embryogenesis, and regeneration. Published in
+        <em>Bioelectricity</em>.
+      </p>
+      <p class="tags"><span>meta-analysis</span><span>bioelectricity</span></p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Zelda &amp; the <em>bicoid</em> gene</h3>
+        <span class="status">2021 &ndash; 2023</span>
+      </header>
+      <p>
+        In the Garcia Lab at UC Berkeley. Investigated Zelda binding sites in
+        the <em>bicoid</em> gene via <em>Drosophila</em> germline clones and
+        GFP/mCherry fluorescence imaging.
+      </p>
+      <p class="tags"><span>developmental biology</span><span>imaging</span></p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Coverage of cis-regulatory elements in model-organism databases</h3>
+        <span class="status">2020 &ndash; 2022</span>
+      </header>
+      <p>
+        Computational survey of how completely major databases catalog
+        cis-regulatory elements across model organisms, also with the Garcia
+        Lab.
+      </p>
+      <p class="tags"><span>databases</span><span>computational biology</span></p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Sleep recall bias in college students</h3>
+        <span class="status">2018</span>
+      </header>
+      <p>
+        Summer research with Dr. Ching-Hua Chen at IBM using random forest
+        regression to identify predictors of recall bias in sleep
+        self-reporting.
+      </p>
+      <p class="tags"><span>random forest</span><span>self-report</span></p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Prefixes in Old English, Old High German &amp; Gothic</h3>
+        <span class="status">2017 &ndash; 2020</span>
+      </header>
+      <p>
+        A cognate-based analysis of prefix semantics across three early
+        Germanic languages, reconstructing meanings from distributional
+        patterns. Preprint on SocArXiv.
+      </p>
+      <p class="tags"><span>historical linguistics</span><span>Germanic</span></p>
+    </article>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>&copy; <span id="year">2026</span> Pranjal Srivastava</span>
+    <span><a href="mailto:pranjalz@umich.edu">pranjalz@umich.edu</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
